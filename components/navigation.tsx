@@ -25,10 +25,11 @@ export function Navigation() {
         <div className="flex items-center justify-between">
           <Link href="/" className="flex items-center gap-2">
             <Image 
-              src="https://ohg.world/images/Logo/WhiteLogo.png"
-              alt="OHG Logo"
-              width={100}
-              height={32}
+              src="/ohg-wordmark-light.avif"
+              alt="OHG"
+              width={256}
+              height={90}
+              priority
               className="h-8 w-auto"
             />
           </Link>
