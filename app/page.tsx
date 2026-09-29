@@ -1,9 +1,16 @@
+import type { Metadata } from 'next'
 import Link from 'next/link'
 import Image from 'next/image'
 import { Navigation } from '@/components/navigation'
 import { Footer } from '@/components/footer'
+import { ShowcaseGrid } from '@/components/showcase-grid'
 import { ArrowRight, Facebook, Linkedin, Instagram } from 'lucide-react'
 import { Button } from '@/components/ui/button'
+import { homeShowcase } from '@/lib/showcase'
+
+export const metadata: Metadata = {
+  alternates: { canonical: '/' },
+}
 
 const socialLinks = [
   { 
@@ -81,7 +88,7 @@ export default function HomePage() {
                 <div className="w-72 h-72 md:w-80 md:h-80 lg:w-96 lg:h-96 rounded-full overflow-hidden border-2 border-border grayscale hover:grayscale-0 transition-all duration-500">
                   <Image
                     src="https://static.wixstatic.com/media/fdd745_b49e25fe2cf74db28d2225b4c35621ff~mv2.png"
-                    alt="Monther AlOmari"
+                    alt="Monther Al-Omari, CEO and co-founder of OHG"
                     fill
                     className="object-cover"
                     priority
@@ -111,6 +118,27 @@ export default function HomePage() {
               <ArrowRight className="ml-2 w-4 h-4 group-hover:translate-x-1 transition-transform" />
             </Link>
           </Button>
+        </div>
+      </section>
+
+      {/* OHG & Brandex Section */}
+      <section className="py-20 px-6">
+        <div className="max-w-6xl mx-auto">
+          <div className="flex flex-col md:flex-row md:items-end justify-between gap-4 mb-10">
+            <div>
+              <span className="text-primary text-sm font-medium tracking-widest uppercase">OHG & Brandex</span>
+              <h2 className="text-3xl font-serif mt-2">
+                Work from Monther Al-Omari&apos;s companies
+              </h2>
+            </div>
+            <Button asChild variant="outline" className="group self-start md:self-auto">
+              <Link href="/work">
+                View all
+                <ArrowRight className="ml-2 w-4 h-4 group-hover:translate-x-1 transition-transform" />
+              </Link>
+            </Button>
+          </div>
+          <ShowcaseGrid items={homeShowcase} />
         </div>
       </section>
 

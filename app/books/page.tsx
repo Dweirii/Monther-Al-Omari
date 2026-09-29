@@ -1,9 +1,16 @@
+import type { Metadata } from 'next'
 import Image from 'next/image'
 import Link from 'next/link'
 import { Navigation } from '@/components/navigation'
 import { Footer } from '@/components/footer'
 import { Button } from '@/components/ui/button'
 import { ArrowRight } from 'lucide-react'
+
+export const metadata: Metadata = {
+  title: 'Books',
+  description: 'Books by Monther Al-Omari: Heisting Millions with AI, Rising with Whispers in the Wind, and Hidden Truths.',
+  alternates: { canonical: '/books' },
+}
 
 const books = [
   {
@@ -60,7 +67,7 @@ export default function BooksPage() {
                 <div className="relative aspect-[3/4] max-w-sm mx-auto">
                   <Image
                     src={book.image}
-                    alt={book.title}
+                    alt={`${book.title}, a book by Monther Al-Omari`}
                     fill
                     className="object-contain drop-shadow-2xl"
                   />

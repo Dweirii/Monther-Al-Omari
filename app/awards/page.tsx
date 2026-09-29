@@ -1,6 +1,13 @@
+import type { Metadata } from 'next'
 import Image from 'next/image'
 import { Navigation } from '@/components/navigation'
 import { Footer } from '@/components/footer'
+
+export const metadata: Metadata = {
+  title: 'Awards',
+  description: 'Awards won by OHG and the companies of Monther Al-Omari, including Red Dot, iF and the BIG Campaign Awards.',
+  alternates: { canonical: '/awards' },
+}
 
 const awards = [
   {
@@ -84,7 +91,7 @@ export default function AwardsPage() {
                 <div className="relative aspect-[16/10] bg-secondary">
                   <Image
                     src={award.image}
-                    alt={award.name}
+                    alt={`${award.name} award, ${award.date}`}
                     fill
                     className="object-cover group-hover:scale-105 transition-transform duration-500"
                   />

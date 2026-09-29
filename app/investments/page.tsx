@@ -1,6 +1,13 @@
+import type { Metadata } from 'next'
 import Image from 'next/image'
 import { Navigation } from '@/components/navigation'
 import { Footer } from '@/components/footer'
+
+export const metadata: Metadata = {
+  title: 'Investments',
+  description: 'The journey of Monther Al-Omari and the portfolio of companies he has invested in, from Whispers Global to GRA and EXIT99.',
+  alternates: { canonical: '/investments' },
+}
 
 const investments = [
   { name: 'GRA', subtitle: 'Global Registration Association', image: 'https://static.wixstatic.com/media/fdd745_68f681fdf6de491ea3acb9aea1f246e3~mv2.png' },
@@ -54,7 +61,7 @@ export default function InvestmentsPage() {
             <div className="relative aspect-[4/5] rounded-lg overflow-hidden">
               <Image
                 src="https://static.wixstatic.com/media/fdd745_2db1aa2a18c349e29ae7a1704a19e760~mv2.jpg"
-                alt="Monther Al Omari"
+                alt="Portrait of Monther Al-Omari"
                 fill
                 className="object-cover grayscale"
               />
@@ -97,7 +104,7 @@ export default function InvestmentsPage() {
               >
                 <Image
                   src={investment.image}
-                  alt={investment.name}
+                  alt={`${investment.name} logo`}
                   fill
                   className="object-contain p-4 group-hover:scale-105 transition-transform duration-300"
                 />
