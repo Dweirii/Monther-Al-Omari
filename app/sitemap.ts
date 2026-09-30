@@ -1,8 +1,6 @@
 import type { MetadataRoute } from 'next'
 import { siteUrl, portraitImage } from '@/lib/site'
-import { ohgWork, brandexWork, homeShowcase, type ShowcaseItem } from '@/lib/showcase'
-
-const imageUrls = (items: ShowcaseItem[]) => items.map((item) => `${siteUrl}${item.image}`)
+import { ohgImages, brandexImages } from '@/lib/gallery'
 
 export default function sitemap(): MetadataRoute.Sitemap {
   return [
@@ -10,13 +8,14 @@ export default function sitemap(): MetadataRoute.Sitemap {
       url: siteUrl,
       changeFrequency: 'monthly',
       priority: 1,
-      images: [portraitImage, ...imageUrls(homeShowcase)],
+      images: [portraitImage],
     },
     {
-      url: `${siteUrl}/work`,
+      url: `${siteUrl}/gallery`,
+      lastModified: '2026-09-30',
       changeFrequency: 'monthly',
       priority: 0.9,
-      images: imageUrls([...ohgWork, ...brandexWork]),
+      images: [...ohgImages, ...brandexImages].map((image) => `${siteUrl}${image.src}`),
     },
     {
       url: `${siteUrl}/investments`,

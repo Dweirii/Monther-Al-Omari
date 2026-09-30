@@ -13,6 +13,9 @@ const nextConfig = {
       },
     ],
   },
+  async redirects() {
+    return [{ source: '/work', destination: '/gallery', permanent: true }]
+  },
 }
 
 export default nextConfig
