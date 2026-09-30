@@ -14,7 +14,7 @@ const playfair = Playfair_Display({
   variable: '--font-playfair'
 })
 
-const description = 'Welcome to the world of visionary leadership. Monther Al Omari, the founder and regional owner of OHG, stands at the helm of a remarkable journey spanning three decades of innovation, growth, and unwavering commitment to success.'
+const description = 'Monther Al-Omari is the CEO and co-founder of OHG, an award-winning packaging design and pre-press group in Amman, Jordan whose artwork reaches 55 markets. OHG’s sister company Brandex runs the all-in-one design asset library.'
 
 export const metadata: Metadata = {
   metadataBase: new URL(siteUrl),
@@ -40,16 +40,17 @@ export const metadata: Metadata = {
   icons: {
     icon: [
       {
-        url: '/icon-light-32x32.png',
-        media: '(prefers-color-scheme: light)',
-      },
-      {
-        url: '/icon-dark-32x32.png',
-        media: '(prefers-color-scheme: dark)',
+        url: '/favicon.ico',
+        sizes: '256x256',
       },
       {
         url: '/icon.svg',
         type: 'image/svg+xml',
+      },
+      {
+        url: '/icon-192.png',
+        type: 'image/png',
+        sizes: '192x192',
       },
     ],
     apple: '/apple-icon.png',

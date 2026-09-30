@@ -1,3 +1,5 @@
+import { summary, companies } from '@/lib/about'
+
 export const siteUrl = 'https://www.montheralomari.com'
 
 export const personName = 'Monther Al-Omari'
@@ -14,6 +16,8 @@ export const personJsonLd = {
       name: personName,
       alternateName: ['Monther AlOmari', 'Monther Al Omari', 'Monther Omari', 'منذر العمري'],
       url: siteUrl,
+      description: summary,
+      knowsAbout: ['Packaging design', 'Branding', 'Packaging pre-press', 'Design assets', 'Artificial intelligence'],
       image: [
         portraitImage,
         'https://static.wixstatic.com/media/fdd745_2db1aa2a18c349e29ae7a1704a19e760~mv2.jpg',
@@ -36,14 +40,30 @@ export const personJsonLd = {
       legalName: 'Omari Holdings Group',
       url: 'https://ohg.world',
       logo: 'https://ohg.world/brand/ohg-wordmark-dark.png',
+      description: companies[0].description,
       founder: { '@id': `${siteUrl}/#person` },
+      address: [
+        { '@type': 'PostalAddress', addressLocality: 'Amman', addressCountry: 'JO' },
+        { '@type': 'PostalAddress', addressLocality: 'Granger', addressRegion: 'IN', addressCountry: 'US' },
+      ],
+      areaServed: ['Jordan', 'Middle East and North Africa', 'Worldwide'],
+      award: [
+        'Red Dot Design Award 2022',
+        'iF Design Award 2019',
+        'Campaign BIG Awards 2019',
+        'International Graphic Design Awards 2022',
+        'DIGIZ Awards 2022',
+        'Brand Film Awards 2021',
+        'AIGA 2020',
+        'Strategy Awards Sweden 2018',
+      ],
     },
     {
       '@type': 'Organization',
       '@id': 'https://brandexme.com/#organization',
       name: 'Brandex',
       url: 'https://brandexme.com',
-      description: 'The all-in-one design asset library. A sister company of OHG.',
+      description: companies[1].description,
     },
   ],
 }

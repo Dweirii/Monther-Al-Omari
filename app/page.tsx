@@ -3,11 +3,37 @@ import Link from 'next/link'
 import Image from 'next/image'
 import { Navigation } from '@/components/navigation'
 import { Footer } from '@/components/footer'
-import { ArrowRight, Facebook, Linkedin, Instagram } from 'lucide-react'
+import { ArrowRight, ArrowUpRight, Facebook, Linkedin, Instagram } from 'lucide-react'
 import { Button } from '@/components/ui/button'
+import { companies, faq } from '@/lib/about'
 
 export const metadata: Metadata = {
   alternates: { canonical: '/' },
+}
+
+const faqJsonLd = {
+  '@context': 'https://schema.org',
+  '@type': 'FAQPage',
+  mainEntity: faq.map((item) => ({
+    '@type': 'Question',
+    name: item.question,
+    acceptedAnswer: { '@type': 'Answer', text: item.answer },
+  })),
+}
+
+// Last character excludes punctuation so a URL at the end of a sentence keeps its full stop outside the link.
+const urlPattern = /(https:\/\/[^\s)]*[^\s).,;:])/
+
+function withLinks(text: string) {
+  return text.split(urlPattern).map((part, index) =>
+    index % 2 === 1 ? (
+      <Link key={index} href={part} className="text-foreground underline underline-offset-4 hover:text-primary">
+        {part.replace('https://', '')}
+      </Link>
+    ) : (
+      part
+    ),
+  )
 }
 
 const socialLinks = [
@@ -31,8 +57,12 @@ const socialLinks = [
 export default function HomePage() {
   return (
     <main className="min-h-screen">
+      <script
+        type="application/ld+json"
+        dangerouslySetInnerHTML={{ __html: JSON.stringify(faqJsonLd).replace(/</g, '\\u003c') }}
+      />
       <Navigation />
-      
+
       {/* Hero Section */}
       <section className="pt-32 pb-20 px-6">
         <div className="max-w-6xl mx-auto">
@@ -119,6 +149,39 @@ export default function HomePage() {
         </div>
       </section>
 
+      {/* Companies Section */}
+      <section className="py-20 px-6">
+        <div className="max-w-6xl mx-auto">
+          <span className="text-primary text-sm font-medium tracking-widest uppercase">Companies</span>
+          <h2 className="text-3xl font-serif mt-2 mb-10">OHG & Brandex</h2>
+          <div className="grid md:grid-cols-2 gap-6">
+            {companies.map((company) => (
+              <Link
+                key={company.name}
+                href={company.url}
+                target="_blank"
+                rel="noopener noreferrer"
+                className="group p-8 border border-border rounded-lg hover:border-primary transition-colors"
+              >
+                <div className="flex items-start justify-between gap-4">
+                  <div>
+                    <h3 className="text-2xl font-serif group-hover:text-primary transition-colors">
+                      {company.name}
+                    </h3>
+                    {company.fullName !== company.name && (
+                      <p className="text-sm text-muted-foreground mt-1">{company.fullName}</p>
+                    )}
+                  </div>
+                  <ArrowUpRight className="w-5 h-5 text-muted-foreground group-hover:text-primary transition-colors" />
+                </div>
+                <p className="text-muted-foreground mt-4 text-sm leading-relaxed">{company.description}</p>
+                <p className="text-primary text-sm font-medium mt-6">{company.label}</p>
+              </Link>
+            ))}
+          </div>
+        </div>
+      </section>
+
       {/* Quick Links Section */}
       <section className="py-20 px-6">
         <div className="max-w-6xl mx-auto">
@@ -162,6 +225,22 @@ export default function HomePage() {
               </p>
             </Link>
           </div>
+        </div>
+      </section>
+
+      {/* FAQ Section */}
+      <section className="py-20 px-6 bg-card/50">
+        <div className="max-w-4xl mx-auto">
+          <span className="text-primary text-sm font-medium tracking-widest uppercase">FAQ</span>
+          <h2 className="text-3xl font-serif mt-2 mb-6">About Monther Al-Omari</h2>
+          <dl className="divide-y divide-border">
+            {faq.map((item) => (
+              <div key={item.question} className="py-6">
+                <dt className="text-xl font-serif">{item.question}</dt>
+                <dd className="text-muted-foreground mt-3 leading-relaxed">{withLinks(item.answer)}</dd>
+              </div>
+            ))}
+          </dl>
         </div>
       </section>
 
