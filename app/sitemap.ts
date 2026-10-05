@@ -1,6 +1,6 @@
 import type { MetadataRoute } from 'next'
 import { siteUrl, portraitImage } from '@/lib/site'
-import { ohgImages, brandexImages } from '@/lib/gallery'
+import { galleryImages } from '@/lib/gallery'
 
 export default function sitemap(): MetadataRoute.Sitemap {
   return [
@@ -12,11 +12,18 @@ export default function sitemap(): MetadataRoute.Sitemap {
     },
     {
       url: `${siteUrl}/gallery`,
-      lastModified: '2026-09-30',
+      lastModified: '2026-10-05',
       changeFrequency: 'monthly',
       priority: 0.9,
-      images: [...ohgImages, ...brandexImages].map((image) => `${siteUrl}${image.src}`),
     },
+    // Each image is listed under its own page, the landing page Google should show it with.
+    ...galleryImages.map((image) => ({
+      url: `${siteUrl}/gallery/${image.slug}`,
+      lastModified: '2026-10-05',
+      changeFrequency: 'yearly' as const,
+      priority: 0.6,
+      images: [`${siteUrl}${image.src}`],
+    })),
     {
       url: `${siteUrl}/investments`,
       changeFrequency: 'yearly',

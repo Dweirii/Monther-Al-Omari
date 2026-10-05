@@ -2,6 +2,8 @@
 // served from public/gallery: this site ships images unoptimized.
 
 export type GalleryImage = {
+  slug: string
+  source: 'OHG' | 'Brandex'
   src: string
   alt: string
   title: string
@@ -11,6 +13,8 @@ export type GalleryImage = {
 }
 
 const ohg = (file: string, title: string, caption: string, width: number, height: number): GalleryImage => ({
+  slug: file,
+  source: 'OHG',
   src: `/gallery/ohg/${file}.jpg`,
   alt: `${title} packaging, pre-press by OHG`,
   title,
@@ -20,6 +24,8 @@ const ohg = (file: string, title: string, caption: string, width: number, height
 })
 
 const brandex = (file: string, title: string, caption: string, width: number, height: number): GalleryImage => ({
+  slug: file,
+  source: 'Brandex',
   src: `/gallery/brandex/${file}.jpg`,
   alt: `${title}, from Brandex`,
   title,
@@ -139,3 +145,5 @@ export const brandexImages: GalleryImage[] = [
   brandex('dual-color-t-shirt-apparel-mockup-realistic-high-resolution-psd', 'Dual Color T-Shirt Apparel Mockup Realistic High-Resolution PSD', 'Mockup', 1200, 866),
   brandex('dark-green-matte-plastic-bag-mockup-with-handle-white-background', 'Dark Green Matte Plastic Bag Mockup with Handle White Background', 'Mockup', 1200, 1200),
 ]
+
+export const galleryImages = [...ohgImages, ...brandexImages]

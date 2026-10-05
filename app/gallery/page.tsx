@@ -1,5 +1,6 @@
 import type { Metadata } from 'next'
 import Image from 'next/image'
+import Link from 'next/link'
 import { Navigation } from '@/components/navigation'
 import { Footer } from '@/components/footer'
 import { siteUrl, personName } from '@/lib/site'
@@ -22,21 +23,7 @@ export const metadata: Metadata = {
   },
 }
 
-const ohg = { '@type': 'Organization', name: 'OHG', url: 'https://ohg.world' }
-const brandex = { '@type': 'Organization', name: 'Brandex', url: 'https://brandexme.com' }
-
-const imageObject = (image: GalleryImage, creator: typeof ohg) => ({
-  '@type': 'ImageObject',
-  contentUrl: `${siteUrl}${image.src}`,
-  name: image.title,
-  caption: image.alt,
-  width: image.width,
-  height: image.height,
-  creator,
-  creditText: creator.name,
-  copyrightNotice: `© ${creator.name}`,
-})
-
+// Each image is described by its own page (app/gallery/[slug]), so this only describes the collection.
 const galleryJsonLd = {
   '@context': 'https://schema.org',
   '@type': 'ImageGallery',
@@ -45,26 +32,26 @@ const galleryJsonLd = {
   name: title,
   description,
   about: { '@id': `${siteUrl}/#person` },
-  associatedMedia: [
-    ...ohgImages.map((image) => imageObject(image, ohg)),
-    ...brandexImages.map((image) => imageObject(image, brandex)),
-  ],
 }
 
 function Masonry({ images }: { images: GalleryImage[] }) {
   return (
     <div className="columns-2 md:columns-3 lg:columns-4 gap-4">
       {images.map((image) => (
-        <figure key={image.src} className="break-inside-avoid mb-4">
-          <Image
-            src={image.src}
-            alt={image.alt}
-            width={image.width}
-            height={image.height}
-            className="w-full h-auto rounded-lg border border-border"
-          />
-          <figcaption className="mt-2 text-xs text-muted-foreground">{image.title}</figcaption>
-        </figure>
+        <Link key={image.slug} href={`/gallery/${image.slug}`} className="group block break-inside-avoid mb-4">
+          <figure>
+            <Image
+              src={image.src}
+              alt={image.alt}
+              width={image.width}
+              height={image.height}
+              className="w-full h-auto rounded-lg border border-border group-hover:border-primary transition-colors"
+            />
+            <figcaption className="mt-2 text-xs text-muted-foreground group-hover:text-primary transition-colors">
+              {image.title}
+            </figcaption>
+          </figure>
+        </Link>
       ))}
     </div>
   )
