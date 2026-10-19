@@ -16,6 +16,7 @@ export const personJsonLd = {
       name: personName,
       alternateName: ['Monther AlOmari', 'Monther Al Omari', 'Monther Omari', 'منذر العمري'],
       url: siteUrl,
+      mainEntityOfPage: `${siteUrl}/about`,
       description: summary,
       knowsAbout: ['Packaging design', 'Branding', 'Packaging pre-press', 'Design assets', 'Artificial intelligence'],
       image: [

@@ -8,7 +8,10 @@ import { Menu, X } from 'lucide-react'
 import { cn } from '@/lib/utils'
 
 const navItems = [
-  { href: '/', label: 'About Me' },
+  { href: '/', label: 'Home' },
+  { href: '/about', label: 'About' },
+  { href: '/ohg', label: 'OHG' },
+  { href: '/brandex', label: 'Brandex' },
   { href: '/investments', label: 'Investments' },
   { href: '/awards', label: 'Awards' },
   { href: '/books', label: 'Books' },
@@ -35,7 +38,7 @@ export function Navigation() {
           </Link>
 
           {/* Desktop Navigation */}
-          <ul className="hidden md:flex items-center gap-8">
+          <ul className="hidden lg:flex items-center gap-8">
             {navItems.map((item) => (
               <li key={item.href}>
                 <Link
@@ -56,7 +59,7 @@ export function Navigation() {
           {/* Mobile Menu Button */}
           <button
             onClick={() => setIsOpen(!isOpen)}
-            className="md:hidden p-2 text-foreground"
+            className="lg:hidden p-2 text-foreground"
             aria-label="Toggle menu"
           >
             {isOpen ? <X className="w-5 h-5" /> : <Menu className="w-5 h-5" />}
@@ -65,7 +68,7 @@ export function Navigation() {
 
         {/* Mobile Navigation */}
         {isOpen && (
-          <ul className="md:hidden pt-4 pb-2 space-y-2">
+          <ul className="lg:hidden pt-4 pb-2 space-y-2">
             {navItems.map((item) => (
               <li key={item.href}>
                 <Link

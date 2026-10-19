@@ -4,7 +4,7 @@
 // not the brands themselves.
 
 export const summary =
-  'Monther Al-Omari is the CEO and co-founder of OHG (Omari Holdings Group), an award-winning packaging design and pre-press group headquartered in Amman, Jordan, and one of the leading design groups in the MENA region. OHG’s sister company Brandex runs the all-in-one design asset library.'
+  'Monther Al-Omari is the CEO and co-founder of OHG (Omari Holdings Group), an award-winning packaging design and pre-press group headquartered in Amman, Jordan, and one of the leading packaging design groups in the Middle East and North Africa, with artwork on shelves in 55 markets and recognition from the Red Dot and iF Design Awards. OHG’s sister company Brandex runs the all-in-one design asset library of over a million assets.'
 
 export const companies = [
   {

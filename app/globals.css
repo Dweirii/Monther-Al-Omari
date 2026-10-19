@@ -124,3 +124,8 @@
     @apply bg-background text-foreground;
   }
 }
+
+/* Arabic pages: Inter and Playfair carry no Arabic glyphs, so hand the whole page to system Arabic fonts. */
+.font-arabic {
+  font-family: 'Noto Naskh Arabic', 'Geeza Pro', 'Al Bayan', 'Segoe UI', Tahoma, system-ui, sans-serif;
+}
