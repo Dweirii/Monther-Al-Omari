@@ -6,7 +6,7 @@ import { Navigation } from '@/components/navigation'
 import { Footer } from '@/components/footer'
 import { Button } from '@/components/ui/button'
 import { siteUrl, personName } from '@/lib/site'
-import { ohg, awards } from '@/lib/profile'
+import { ohg, awards, whyOhg, clientGroups } from '@/lib/profile'
 import { ohgImages } from '@/lib/gallery'
 
 const title = 'OHG: packaging design and pre-press in Jordan and MENA'
@@ -119,13 +119,18 @@ export default function OhgPage() {
             Work on shelves in 55 markets
           </h2>
           <p className="text-muted-foreground mb-10 max-w-2xl">{ohg.brandsQualifier}</p>
-          <ul className="flex flex-wrap gap-3 mb-10">
+          <ul className="flex flex-wrap gap-3 mb-4">
             {ohg.brands.map((brand) => (
               <li key={brand} className="px-4 py-2 border border-border rounded-full text-sm">
                 {brand}
               </li>
             ))}
           </ul>
+          <p className="mb-10">
+            <Link href="/clients" className="text-sm text-muted-foreground hover:text-primary underline underline-offset-4">
+              All {clientGroups.reduce((sum, group) => sum + group.brands.length, 0)} brands by sector
+            </Link>
+          </p>
           <div className="grid grid-cols-2 md:grid-cols-4 gap-4">
             {featured.map((image) => (
               <Link key={image.slug} href={`/gallery/${image.slug}`} className="group block">
@@ -145,8 +150,36 @@ export default function OhgPage() {
         </div>
       </section>
 
-      {/* Sectors and formats */}
+      {/* Why OHG */}
       <section className="py-20 px-6">
+        <div className="max-w-6xl mx-auto">
+          <h2 className="text-3xl font-serif mb-4 flex items-center gap-3">
+            <span className="w-2 h-2 rounded-full bg-primary" />
+            Why brands stay with OHG
+          </h2>
+          <p className="text-muted-foreground mb-10 max-w-2xl">Two disciplines, one studio. In OHG’s own words.</p>
+          <ol className="grid md:grid-cols-3 gap-6 mb-12">
+            {whyOhg.principles.map((item, index) => (
+              <li key={item.title} className="p-6 border border-border rounded-lg">
+                <p className="text-primary text-sm font-medium">{String(index + 1).padStart(2, '0')}</p>
+                <p className="font-serif text-xl mt-1">{item.title}</p>
+                <p className="text-sm text-muted-foreground mt-2 leading-relaxed">{item.body}</p>
+              </li>
+            ))}
+          </ol>
+          <div className="grid md:grid-cols-3 gap-8">
+            {whyOhg.themes.map((item) => (
+              <div key={item.title} className="border-t border-border pt-4">
+                <p className="font-serif text-xl">{item.title}</p>
+                <p className="text-sm text-muted-foreground mt-2 leading-relaxed">{item.body}</p>
+              </div>
+            ))}
+          </div>
+        </div>
+      </section>
+
+      {/* Sectors and formats */}
+      <section className="py-20 px-6 bg-card/50">
         <div className="max-w-6xl mx-auto grid md:grid-cols-2 gap-12">
           <div>
             <h2 className="text-3xl font-serif mb-6 flex items-center gap-3">
@@ -174,7 +207,7 @@ export default function OhgPage() {
       </section>
 
       {/* Case studies */}
-      <section className="py-20 px-6 bg-card/50">
+      <section className="py-20 px-6">
         <div className="max-w-6xl mx-auto">
           <h2 className="text-3xl font-serif mb-10 flex items-center gap-3">
             <span className="w-2 h-2 rounded-full bg-primary" />

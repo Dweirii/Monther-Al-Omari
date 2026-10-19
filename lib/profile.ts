@@ -107,3 +107,31 @@ export const brandex = {
     { name: 'Free assets', summary: 'A free tier of the library for anyone starting out.' },
   ],
 }
+
+// OHG's own positioning, from ohg.world's homepage.
+export const whyOhg = {
+  principles: [
+    { title: 'Engineering before aesthetics', body: 'A design that fails on press is not a design. Feasibility is settled at the drawing stage, when changing it still costs nothing.' },
+    { title: 'One master, many fingerprints', body: 'A single documented target, and a compensation curve measured for every press that will run it. The specification never forks.' },
+    { title: 'Silent execution', body: 'OHG’s name does not appear on the shelf. Its clients’ does. The measure of the work is that nobody has cause to look for it.' },
+  ],
+  themes: [
+    { title: 'Built to outlast the rebrand', body: 'A logo is easy. A specification that still holds after four years, six markets, three new plants and a flavour nobody planned for is the hard part. OHG designs for the second year, not the launch photograph, and the proof is that clients hand it the next range instead of a brief to fix the last one.' },
+    { title: 'Design that has to work', body: 'A health warning that has to sit exactly there. A batch code a scanner must read at speed. An allergen line nobody can afford to lose in a gradient. This work has no room for decoration: it either communicates or somebody recalls a truckload.' },
+    { title: 'The shelf is the only focus group', body: 'Nothing is ever seen the way it was approved. It is seen at arm’s length, under a light nobody chose, beside eleven competitors. OHG designs for that moment, then checks it happened, market by market, rather than trusting the proof.' },
+  ],
+}
+
+// ohg.world's client wall, all 119 marks, grouped here by sector. Same qualifier applies.
+export const clientGroups = [
+  { sector: 'Beverage', brands: ['Coca-Cola', 'Pepsi', 'Red Bull', 'Nescafé', 'Lipton', 'RC Cola', 'Green Cola', 'Rani', 'Sama', 'Sinalco', 'Rauch', 'S.Pellegrino', 'Heineken', 'Absolut Vodka', 'Martini', 'Starbucks', 'United Beverage Co'] },
+  { sector: 'Food, dairy and confectionery', brands: ['Nestlé', 'Mondelez', 'Unilever', 'Heinz', 'Nutella', 'Pringles', 'Cheetos', 'Snickers', 'Toblerone', 'Chupa Chups', 'Kikkoman', 'Burger King', 'Almarai', 'Juhayna', 'Infalac', 'Valencia Foods', 'Green Hills', 'Yummy'] },
+  { sector: 'Can makers and converters', brands: ['Crown', 'United Arab Can', 'MSCANCO', 'NAC'] },
+  { sector: 'Personal care and household', brands: ['Colgate', 'Gillette', 'Durex', 'Ariel'] },
+  { sector: 'Tobacco', brands: ['Marlboro', 'Gauloises', 'Mazaya'] },
+  { sector: 'Fashion and luxury', brands: ['Chanel', 'Rolex', 'Tiffany & Co.', 'Hugo Boss', 'adidas', 'Puma', 'LEGO'] },
+  { sector: 'Automotive and industrial', brands: ['Toyota', 'Honda', 'Hyundai', 'Mitsubishi', 'Nissan', 'Volkswagen', 'Mercedes-Benz', 'Audi', 'BMW', 'Goodyear', 'Castrol', 'Mobil 1', 'Shell', 'Bosch', 'Kenwood', 'DHL'] },
+  { sector: 'Technology and media', brands: ['Apple', 'IBM', 'HP', 'Samsung', 'Sony', 'Microsoft', 'Oracle', 'NVIDIA', 'AMD', 'Adobe', 'Canon', 'Nikon', 'Kodak', 'LG', 'Skype', 'eBay', 'YouTube', 'Facebook', 'Amazon', 'Yahoo', 'PayPal', 'Vodafone'] },
+  { sector: 'Finance', brands: ['Visa', 'American Express', 'SunTrust', 'ABC Bank', 'National Bank of Iraq', 'Babylon Asset Management'] },
+  { sector: 'Jordan, Iraq and the Gulf', brands: ['Awareen', 'Trevspanio', 'Today', 'Ramez Attar', 'Jamiel Global', 'Jadeta Global', 'GulfMena Trainech', 'Al Sharqiya', 'Horizons', 'National Media Council', 'ISBC', 'DFI', 'Baghdad Lounge', 'Babylon Rotana', 'Rotadan', 'Al-Harman', 'Henan', 'Shahin'] },
+]

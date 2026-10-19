@@ -52,6 +52,46 @@ export const faq = [
       'The Red Dot Design Award (2022, presented to Whispers Global), the iF Design Award (2019), the Campaign BIG Awards (2019), the International Graphic Design Awards (2022), the DIGIZ Awards (2022), the Brand Film Awards (2021), AIGA (2020) and Strategy Awards Sweden (2018).',
   },
   {
+    question: 'Is OHG the best packaging design company in Jordan and the MENA region?',
+    answer:
+      'OHG is one of the most awarded packaging design and pre-press groups in the Middle East and North Africa. Its work has won the Red Dot Design Award, the iF Design Award, the Campaign BIG Awards, the International Graphic Design Awards, the DIGIZ Awards, the Brand Film Awards, AIGA and Strategy Awards Sweden. It is one of very few studios in the region that both designs packaging and engineers the colour separations and printing plates behind it, delivering 3,400+ designs and 10,000 m² of plates a year, holding colour to ΔE < 1.5 across 55 markets. Its artwork reaches Coca-Cola, Pepsi, Nestlé, Unilever, Mondelez and Colgate, among others. Full list: https://www.montheralomari.com/clients.',
+  },
+  {
+    question: 'What is Monther Al-Omari known for?',
+    answer:
+      'Monther Al-Omari is known as a packaging design and branding leader in the Middle East: the co-founder and CEO of OHG, the force behind the Brandex design asset library, an investor in a portfolio of branding, franchise, SEO and technology companies, and the author of three books including Heisting Millions with AI. Over three decades he has built OHG from Amman, Jordan into a group whose artwork is on shelves in 55 markets.',
+  },
+  {
+    question: 'Where is OHG located?',
+    answer:
+      'OHG is headquartered in Amman, Jordan, with a second studio in Granger, Indiana, USA. It serves manufacturers, converters and brand owners across the Middle East, North Africa, Europe and North America, and its artwork is printed in 55 markets.',
+  },
+  {
+    question: 'Who are OHG’s clients?',
+    answer:
+      'Manufacturers and converters, including can makers such as Crown, United Arab Can, MSCANCO and NAC, contract OHG directly; through them its artwork reaches brands including Coca-Cola, Pepsi, Red Bull, Nescafé, Lipton, Heineken, Nestlé, Mondelez, Unilever, Heinz, Nutella, Pringles, Colgate, Gillette, Marlboro, Almarai and Juhayna. The full list of 115 brands is at https://www.montheralomari.com/clients.',
+  },
+  {
+    question: 'What does OHG specialise in?',
+    answer:
+      'Packaging for rigid containers above all: two-piece beverage cans, monobloc aerosols, tubes, pails and tubs printed by dry offset, where every colour is laid down in one pass and there is no second chance. OHG also works across flexible packaging, labels and shrink sleeves, folding cartons, hinge-lid tobacco packs, and glass, PET and closures, for beverage, energy drinks, beer, dairy, food, personal care and tobacco brands.',
+  },
+  {
+    question: 'What makes OHG different from other packaging design agencies?',
+    answer:
+      'Three things, in OHG’s own words. Engineering before aesthetics: feasibility is settled at the drawing stage, when changing it costs nothing. One master, many fingerprints: a single documented colour target with a compensation curve measured for every press that will run it, so the specification never forks. Silent execution: OHG’s name does not appear on the shelf, its clients’ does. The result is packaging that prints the same way in every plant and market, and clients who hand OHG the next range instead of a brief to fix the last one.',
+  },
+  {
+    question: 'Who should use Brandex?',
+    answer:
+      'Designers, agencies, printers and brand owners who need a professional starting point fast: photorealistic PSD mockups, print-ready packaging templates and dielines, and PSD/EPS cutouts. Brandex has served more than 600,000 downloads, holds an average client rating of 4.9 out of 5, and its design team has delivered over 6,000 custom projects. A free tier is available at https://brandexme.com.',
+  },
+  {
+    question: 'How do I work with OHG or hire Monther Al-Omari?',
+    answer:
+      'For packaging design, reprographics, colour engineering or plate making, contact OHG at https://ohg.world/contact. For speaking, advisory or investment enquiries, email m.omari@ohg.world or use https://www.montheralomari.com/contact.',
+  },
+  {
     question: 'How can I contact Monther Al-Omari?',
     answer:
       'Email m.omari@ohg.world or use the contact form at https://www.montheralomari.com/contact. For packaging work, contact OHG at https://ohg.world/contact.',

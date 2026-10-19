@@ -28,6 +28,7 @@ export default function sitemap(): MetadataRoute.Sitemap {
     },
     { url: `${siteUrl}/ohg`, lastModified: '2026-10-19', changeFrequency: 'monthly', priority: 0.9 },
     { url: `${siteUrl}/brandex`, lastModified: '2026-10-19', changeFrequency: 'monthly', priority: 0.8 },
+    { url: `${siteUrl}/clients`, lastModified: '2026-10-19', changeFrequency: 'yearly', priority: 0.8 },
     {
       url: `${siteUrl}/gallery`,
       lastModified: '2026-10-05',

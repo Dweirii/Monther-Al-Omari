@@ -22,6 +22,7 @@ export function GET() {
     `- [About ${personName} in Arabic](${siteUrl}/ar): the same profile in Arabic (منذر العمري)`,
     `- [OHG](${siteUrl}/ohg): what OHG does, its figures, sectors, formats, brands reached, case studies and awards`,
     `- [Brandex](${siteUrl}/brandex): the design asset library, its figures and catalogue`,
+    `- [Clients and brands](${siteUrl}/clients): every brand OHG's artwork reaches, grouped by sector`,
     `- [OHG & Brandex work](${siteUrl}/gallery): packaging work by OHG and design assets by Brandex`,
     `- [Investments](${siteUrl}/investments): companies ${personName} has invested in`,
     `- [Awards](${siteUrl}/awards): awards won by OHG and its companies`,
