@@ -4,8 +4,8 @@ import { Navigation } from '@/components/navigation'
 import { Footer } from '@/components/footer'
 
 export const metadata: Metadata = {
-  title: 'Awards',
-  description: 'Awards won by OHG and the companies of Monther Al-Omari, including Red Dot, iF and the BIG Campaign Awards.',
+  title: 'Awards won by OHG and Monther Al-Omari',
+  description: 'Red Dot, iF Design, Campaign BIG, International Graphic Design, DIGIZ, Brand Film and Strategy Awards Sweden: the awards won by OHG and the companies of Monther Al-Omari.',
   alternates: { canonical: '/awards' },
 }
 

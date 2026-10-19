@@ -4,19 +4,19 @@ import { ArrowRight, ArrowUpRight } from 'lucide-react'
 import { Navigation } from '@/components/navigation'
 import { Footer } from '@/components/footer'
 import { Button } from '@/components/ui/button'
-import { siteUrl, personName } from '@/lib/site'
+import { siteUrl, personName, portraitImage } from '@/lib/site'
 import { ohg, clientGroups } from '@/lib/profile'
 
 const total = clientGroups.reduce((sum, group) => sum + group.brands.length, 0)
 
 const title = `Brands reached by OHG: ${total} names on shelves in 55 markets`
-const description = `The brands whose packaging carries artwork by OHG, the packaging design and pre-press group co-founded by ${personName}: Coca-Cola, Pepsi, Nestlé, Unilever, Mondelez, Colgate, Heineken, Red Bull and ${total - 8} more, across beverage, food, personal care, tobacco and beyond.`
+const description = `${total} brands whose packaging carries artwork by ${personName}’s OHG: Coca-Cola, Pepsi, Nestlé, Unilever, Heineken, Red Bull, Colgate, Marlboro and more, by sector.`
 
 export const metadata: Metadata = {
   title: 'Clients and brands',
   description,
   alternates: { canonical: '/clients' },
-  openGraph: { title, description, url: '/clients' },
+  openGraph: { title, description, url: '/clients', images: [portraitImage] },
 }
 
 const jsonLd = {

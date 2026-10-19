@@ -10,7 +10,7 @@ import { companies } from '@/lib/about'
 import { headline, bio, atAGlance, awards, investments, books } from '@/lib/profile'
 
 const title = `About ${personName}`
-const description = `${personName}: ${headline}`
+const description = `Biography of ${personName}: world-class packaging designer, CEO and co-founder of OHG since 1994, Red Dot and iF award winner, author and investor.`
 
 export const metadata: Metadata = {
   title: { absolute: `${title} | CEO & Co-Founder of OHG` },

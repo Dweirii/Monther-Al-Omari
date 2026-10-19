@@ -14,11 +14,14 @@ const title = `${name} | الرئيس التنفيذي والشريك المؤس
 const description =
   'منذر العمري مصمم تغليف وجرافيك عالمي المستوى، والرئيس التنفيذي والشريك المؤسس لمجموعة العمري القابضة (OHG) التي أسسها عام 1994، ومقرها غرانجر بولاية إنديانا الأمريكية واستوديوها في عمّان، الأردن، وهي إحدى المجموعات الرائدة في تصميم التغليف وهندسة ما قبل الطباعة في الشرق الأوسط والعالم.'
 
+const metaDescription =
+  'منذر العمري: مصمم تغليف عالمي المستوى، والرئيس التنفيذي والشريك المؤسس لمجموعة OHG منذ 1994، الحائزة على جوائز Red Dot وiF، وتصل أعمالها إلى 55 سوقاً.'
+
 export const metadata: Metadata = {
   title: { absolute: title },
-  description,
+  description: metaDescription,
   alternates: { canonical: '/ar', languages: { en: '/about', ar: '/ar' } },
-  openGraph: { type: 'profile', title, description, url: '/ar', images: [portraitImage], locale: 'ar_JO' },
+  openGraph: { type: 'profile', title, description: metaDescription, url: '/ar', images: [portraitImage], locale: 'ar_JO' },
 }
 
 const jsonLd = {

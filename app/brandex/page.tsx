@@ -10,7 +10,7 @@ import { brandex } from '@/lib/profile'
 import { brandexImages } from '@/lib/gallery'
 
 const title = 'Brandex: the design asset library from OHG'
-const description = `Brandex, the sister company of ${personName}’s OHG, is an all-in-one design asset library of over a million premium mockups, packaging templates and PSD/EPS files, with 600,000+ downloads served and a design team on call.`
+const description = `Brandex, sister company of ${personName}’s OHG: over a million mockups, packaging templates and PSD/EPS files, 600,000+ downloads and a design team on call.`
 
 export const metadata: Metadata = {
   title,

@@ -7,7 +7,7 @@ import { Button } from '@/components/ui/button'
 import { ArrowRight } from 'lucide-react'
 
 export const metadata: Metadata = {
-  title: 'Books',
+  title: 'Books by Monther Al-Omari',
   description: 'Books by Monther Al-Omari: Heisting Millions with AI, Rising with Whispers in the Wind, and Hidden Truths.',
   alternates: { canonical: '/books' },
 }

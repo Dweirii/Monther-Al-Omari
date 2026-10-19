@@ -25,10 +25,18 @@ const creators = {
 const heading = (image: GalleryImage) =>
   image.source === 'OHG' ? `${image.title} packaging by OHG` : image.title
 
+// Google shows about 60 characters of a title; Brandex product names run to 90.
+const shortTitle = (image: GalleryImage) => {
+  const full = heading(image)
+  if (full.length <= 58) return `${full} | ${personName}`
+  const cut = full.slice(0, 58).replace(/[\s,–-]+\S*$/, '')
+  return `${cut} | ${image.source}`
+}
+
 const detail = (image: GalleryImage) =>
   image.source === 'OHG'
     ? `${image.caption}. Packaging pre-press by OHG, the packaging design and pre-press group co-founded and led by ${personName}.`
-    : `A ${image.caption.toLowerCase()} from Brandex, the design asset library and sister company of ${personName}’s OHG.`
+    : `${image.title}: a ${image.caption.toLowerCase()} from Brandex, the design asset library and sister company of ${personName}’s OHG.`
 
 type Props = { params: Promise<{ slug: string }> }
 
@@ -38,7 +46,7 @@ export async function generateMetadata({ params }: Props): Promise<Metadata> {
   if (!image) return {}
 
   return {
-    title: heading(image),
+    title: { absolute: shortTitle(image) },
     description: detail(image),
     alternates: { canonical: `/gallery/${image.slug}` },
     openGraph: {

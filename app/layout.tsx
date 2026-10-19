@@ -14,7 +14,7 @@ const playfair = Playfair_Display({
   variable: '--font-playfair'
 })
 
-const description = 'Monther Al-Omari is a world-class packaging and graphic designer and the CEO and co-founder of OHG, the award-winning packaging design and pre-press group founded in 1994, based in Granger, Indiana and Amman, Jordan, with 5,000+ employees and artwork on shelves in 55 markets. Its sister company Brandex runs the all-in-one design asset library.'
+const description = 'World-class packaging designer and CEO of OHG, the award-winning packaging design and pre-press group founded in 1994 with 5,000+ employees and artwork in 55 markets.'
 
 export const metadata: Metadata = {
   metadataBase: new URL(siteUrl),

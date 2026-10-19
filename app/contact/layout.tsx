@@ -1,8 +1,8 @@
 import type { Metadata } from 'next'
 
 export const metadata: Metadata = {
-  title: 'Contact',
-  description: 'Get in touch with Monther Al-Omari, CEO and co-founder of OHG.',
+  title: 'Contact Monther Al-Omari',
+  description: 'Get in touch with Monther Al-Omari, CEO and co-founder of OHG, for packaging design, speaking, advisory or investment enquiries, or email m.omari@ohg.world.',
   alternates: { canonical: '/contact' },
 }
 

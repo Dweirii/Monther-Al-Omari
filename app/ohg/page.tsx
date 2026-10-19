@@ -9,8 +9,8 @@ import { siteUrl, personName } from '@/lib/site'
 import { ohg, awards, whyOhg, clientGroups } from '@/lib/profile'
 import { ohgImages } from '@/lib/gallery'
 
-const title = 'OHG: packaging design and pre-press in Jordan and MENA'
-const description = `OHG (Omari Holdings Group), co-founded and led by ${personName}, is an award-winning packaging design, reprographics and pre-press group in Amman, Jordan, one of the leading studios of its kind in the Middle East and North Africa, with artwork on shelves in 55 markets.`
+const title = 'OHG: packaging design and pre-press, USA and MENA'
+const description = `OHG, led by ${personName}: award-winning packaging design and pre-press since 1994, 5,000+ employees, 23 branches, colour held to ΔE < 1.5 in 55 markets.`
 
 export const metadata: Metadata = {
   title,
