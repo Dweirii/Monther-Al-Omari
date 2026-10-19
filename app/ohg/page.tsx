@@ -79,7 +79,7 @@ export default function OhgPage() {
 
       {/* Stats */}
       <section className="py-12 px-6 bg-card/50">
-        <div className="max-w-6xl mx-auto grid grid-cols-2 md:grid-cols-3 lg:grid-cols-6 gap-6">
+        <div className="max-w-6xl mx-auto grid grid-cols-2 md:grid-cols-5 gap-8">
           {ohg.stats.map((item) => (
             <div key={item.label}>
               <p className="text-2xl md:text-3xl font-serif text-primary">{item.value}</p>

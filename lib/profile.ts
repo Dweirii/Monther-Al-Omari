@@ -3,22 +3,24 @@
 // ("award-winning", "one of the leading…") and never a superlative nobody can check ("#1", "the best").
 
 export const headline =
-  'Award-winning packaging design leader from Amman, Jordan. CEO and co-founder of OHG, one of the leading packaging design and pre-press groups in the Middle East and North Africa.'
+  'World-class packaging and graphic designer. CEO and co-founder of OHG, the award-winning packaging design and pre-press group founded in 1994, based in Granger, Indiana and Amman, Jordan, and one of the leading groups of its kind in the Middle East and worldwide.'
 
 export const bio = [
-  'Monther Al-Omari is the CEO and co-founder of OHG (Omari Holdings Group), the packaging design, reprographics and pre-press engineering group headquartered in Amman, Jordan, with a second studio in Granger, Indiana, USA. Over three decades he has built OHG into one of the leading packaging design groups in the Middle East and North Africa, with artwork that reaches shelves in 55 markets.',
+  'Monther Al-Omari is a world-class packaging and graphic designer and the CEO and co-founder of OHG (Omari Holdings Group), the packaging design, reprographics and pre-press engineering group he founded in 1994. Based in Granger, Indiana, USA, with its studio in Amman, Jordan, OHG has grown under his leadership to 5,000+ employees across 23 branches, revenue of $87.6m, and artwork that reaches shelves in 55 markets, making it one of the leading packaging design groups in the Middle East and North Africa and worldwide.',
   'OHG works at the point where design meets the printing press. Its studio designs brand identities and packaging, then engineers the colour separations, compensation curves and laser-engraved plates that let a design print the same way in every plant and every market, holding colour to a tolerance of ΔE < 1.5. Manufacturers and converters contract OHG directly, and through them its artwork reaches global brands including Coca-Cola, Pepsi, Nestlé, Unilever, Mondelez and Colgate.',
-  'The group’s work has been recognised with the Red Dot Design Award, the iF Design Award, the Campaign BIG Awards, the International Graphic Design Awards, the DIGIZ Awards, the Brand Film Awards, AIGA and Strategy Awards Sweden.',
+  'The group’s work has been recognised with seven international awards: the Red Dot Design Award, the iF Design Award, the Campaign BIG Awards, the International Graphic Design Awards, the DIGIZ Awards, the Brand Film Awards and Strategy Awards Sweden. OHG is also a member of AIGA, the professional association for design.',
   'Alongside OHG, Monther is behind Brandex, the all-in-one design asset library with over a million premium mockups, packaging templates and PSD/EPS files, and an investor in a portfolio that includes Whispers Global, Brand Founder, Franchisor, Exit 99, Kayan Aletihad and the Global Registration Association. He is also the author of three books, including Heisting Millions with AI.',
 ]
 
 export const atAGlance = [
+  { value: '1994', label: 'Founded OHG' },
   { value: '30+', label: 'Years in branding and packaging' },
-  { value: '8', label: 'International design awards' },
+  { value: '5,000+', label: 'OHG employees worldwide' },
+  { value: '23', label: 'OHG branches worldwide' },
   { value: '55', label: 'Markets OHG’s artwork reaches' },
-  { value: '2', label: 'Studios: Amman and Granger, Indiana' },
+  { value: '7', label: 'International design awards' },
+  { value: '115', label: 'Brands reached' },
   { value: '1M+', label: 'Design assets in the Brandex library' },
-  { value: '3', label: 'Published books' },
 ]
 
 export const awards = [
@@ -28,7 +30,7 @@ export const awards = [
   { name: 'International Graphic Design Awards', year: '2022', note: 'Branding, packaging, print and typography' },
   { name: 'DIGIZ Awards', year: '2022', note: 'German award for digital innovation' },
   { name: 'Brand Film Awards', year: '2021', note: 'Best brand films and branded content' },
-  { name: 'AIGA', year: '2020', note: 'The professional association for design' },
+  { name: 'AIGA', year: '2020', note: 'Member of the professional association for design' },
   { name: 'Strategy Awards Sweden', year: '2018', note: 'Outstanding achievement in strategic planning' },
 ]
 
@@ -49,10 +51,14 @@ export const books = [
 
 // OHG, as ohg.world publishes it.
 export const ohg = {
-  headline: 'Packaging design, reprographics and pre-press engineering from Amman, Jordan',
+  headline: 'Packaging design, reprographics and pre-press engineering, since 1994',
   intro:
-    'OHG (Omari Holdings Group) is an award-winning packaging design and pre-press group and one of the leading studios of its kind in the Middle East and North Africa. From Amman, Jordan and Granger, Indiana, it takes a product from its brand identity to the printing plate, so that what is approved on screen is what appears on shelf, in every plant and every market.',
+    'OHG (Omari Holdings Group) is an award-winning packaging design and pre-press group and one of the leading groups of its kind in the Middle East and North Africa and worldwide. Founded in 1994 and based in Granger, Indiana, USA, with its studio in Amman, Jordan, it takes a product from its brand identity to the printing plate, so that what is approved on screen is what appears on shelf, in every plant and every market.',
   stats: [
+    { value: '1994', label: 'Founded' },
+    { value: '5,000+', label: 'Employees around the world' },
+    { value: '23', label: 'Group branches around the world' },
+    { value: '$87.6m', label: 'Revenue, up 14% in US dollars' },
     { value: '25+', label: 'Years engineering packaging' },
     { value: '3,400+', label: 'Designs delivered each year' },
     { value: '10,000 m²', label: 'Printing plates produced each year' },

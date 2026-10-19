@@ -62,7 +62,7 @@ export default function AboutPage() {
 
       {/* At a glance */}
       <section className="py-12 px-6 bg-card/50">
-        <div className="max-w-6xl mx-auto grid grid-cols-2 md:grid-cols-3 lg:grid-cols-6 gap-6">
+        <div className="max-w-6xl mx-auto grid grid-cols-2 md:grid-cols-4 gap-8">
           {atAGlance.map((item) => (
             <div key={item.label}>
               <p className="text-3xl font-serif text-primary">{item.value}</p>

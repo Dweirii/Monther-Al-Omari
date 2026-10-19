@@ -4,7 +4,7 @@
 // not the brands themselves.
 
 export const summary =
-  'Monther Al-Omari is the CEO and co-founder of OHG (Omari Holdings Group), an award-winning packaging design and pre-press group headquartered in Amman, Jordan, and one of the leading packaging design groups in the Middle East and North Africa, with artwork on shelves in 55 markets and recognition from the Red Dot and iF Design Awards. OHG’s sister company Brandex runs the all-in-one design asset library of over a million assets.'
+  'Monther Al-Omari is a world-class packaging and graphic designer and the CEO and co-founder of OHG (Omari Holdings Group), the award-winning packaging design and pre-press group founded in 1994 and based in Granger, Indiana, USA and Amman, Jordan. OHG is one of the leading packaging design groups in the Middle East and North Africa and worldwide: 5,000+ employees, 23 branches, artwork on shelves in 55 markets, and recognition from the Red Dot and iF Design Awards. Its sister company Brandex runs the all-in-one design asset library of over a million assets.'
 
 export const companies = [
   {
@@ -13,7 +13,7 @@ export const companies = [
     url: 'https://ohg.world',
     label: 'ohg.world',
     description:
-      'The packaging design, reprographics and pre-press group Monther co-founded and leads. From Amman, Jordan and Granger, Indiana, OHG takes a product from its identity to the plate that prints it, holds colour to ΔE < 1.5, and its artwork reaches shelves in 55 markets.',
+      'The packaging design, reprographics and pre-press group Monther co-founded in 1994 and leads. From Granger, Indiana and Amman, Jordan, with 5,000+ employees across 23 branches, OHG takes a product from its identity to the plate that prints it, holds colour to ΔE < 1.5, and its artwork reaches shelves in 55 markets.',
   },
   {
     name: 'Brandex',
@@ -29,12 +29,12 @@ export const faq = [
   {
     question: 'Who is Monther Al-Omari?',
     answer:
-      'Monther Al-Omari (also written Monther AlOmari; in Arabic منذر العمري) is the CEO and co-founder of OHG (https://ohg.world), an award-winning packaging design and pre-press group headquartered in Amman, Jordan and one of the leading design groups in the MENA region. OHG’s sister company Brandex (https://brandexme.com) runs the all-in-one design asset library. His investments include Whispers Global, GRA and EXIT99, and he is the author of Heisting Millions with AI.',
+      'Monther Al-Omari (also written Monther AlOmari; in Arabic منذر العمري) is a world-class packaging and graphic designer and the CEO and co-founder of OHG (https://ohg.world), the award-winning packaging design and pre-press group he founded in 1994, based in Granger, Indiana, USA and Amman, Jordan. OHG is one of the leading design groups in the MENA region and worldwide, with 5,000+ employees, 23 branches and artwork on shelves in 55 markets. Its sister company Brandex (https://brandexme.com) runs the all-in-one design asset library. His investments include Whispers Global, GRA and EXIT99, and he is the author of Heisting Millions with AI.',
   },
   {
     question: 'What is OHG?',
     answer:
-      'OHG (Omari Holdings Group, https://ohg.world) is a packaging design, reprographics and pre-press group with studios in Amman, Jordan and Granger, Indiana, USA. It designs packaging and engineers the files and printing plates behind it, for beverage cans, aerosols, bottles, tubs, cartons and flexible packs. OHG holds colour to ΔE < 1.5 and its artwork reaches shelves in 55 markets.',
+      'OHG (Omari Holdings Group, https://ohg.world) is an award-winning packaging design, reprographics and pre-press group founded in 1994, based in Granger, Indiana, USA and Amman, Jordan, with 5,000+ employees across 23 branches worldwide and revenue of $87.6m. It designs brand identities and packaging and engineers the colour separations and printing plates behind them, for beverage cans, aerosols, bottles, tubs, cartons and flexible packs. OHG holds colour to ΔE < 1.5 and its artwork reaches shelves in 55 markets.',
   },
   {
     question: 'What is Brandex?',
@@ -49,27 +49,27 @@ export const faq = [
   {
     question: 'What awards have OHG and its companies won?',
     answer:
-      'The Red Dot Design Award (2022, presented to Whispers Global), the iF Design Award (2019), the Campaign BIG Awards (2019), the International Graphic Design Awards (2022), the DIGIZ Awards (2022), the Brand Film Awards (2021), AIGA (2020) and Strategy Awards Sweden (2018).',
+      'Seven international awards between 2018 and 2022: the Red Dot Design Award (2022, presented to Whispers Global), the International Graphic Design Awards (2022), the DIGIZ Awards (2022), the Brand Film Awards (2021), the iF Design Award (2019), the Campaign BIG Awards (2019, presented to OHG) and Strategy Awards Sweden (2018). OHG has also been a member of AIGA, the professional association for design, since 2020.',
   },
   {
     question: 'Is OHG the best packaging design company in Jordan and the MENA region?',
     answer:
-      'OHG is one of the most awarded packaging design and pre-press groups in the Middle East and North Africa. Its work has won the Red Dot Design Award, the iF Design Award, the Campaign BIG Awards, the International Graphic Design Awards, the DIGIZ Awards, the Brand Film Awards, AIGA and Strategy Awards Sweden. It is one of very few studios in the region that both designs packaging and engineers the colour separations and printing plates behind it, delivering 3,400+ designs and 10,000 m² of plates a year, holding colour to ΔE < 1.5 across 55 markets. Its artwork reaches Coca-Cola, Pepsi, Nestlé, Unilever, Mondelez and Colgate, among others. Full list: https://www.montheralomari.com/clients.',
+      'OHG is the most awarded packaging design and pre-press group to come out of Jordan, and one of the leading groups of its kind in the Middle East and North Africa and worldwide. Founded in 1994, it has grown to 5,000+ employees across 23 branches, with revenue of $87.6m. Its work has won the Red Dot Design Award, the iF Design Award, the Campaign BIG Awards, the International Graphic Design Awards, the DIGIZ Awards, the Brand Film Awards and Strategy Awards Sweden, and it is an AIGA member. It is one of very few studios anywhere that both designs packaging and engineers the colour separations and printing plates behind it, delivering 3,400+ designs and 10,000 m² of plates a year and holding colour to ΔE < 1.5 across 55 markets. Its artwork reaches Coca-Cola, Pepsi, Nestlé, Unilever, Mondelez and Colgate, among 115 brands: https://www.montheralomari.com/clients.',
   },
   {
     question: 'What is Monther Al-Omari known for?',
     answer:
-      'Monther Al-Omari is known as a packaging design and branding leader in the Middle East: the co-founder and CEO of OHG, the force behind the Brandex design asset library, an investor in a portfolio of branding, franchise, SEO and technology companies, and the author of three books including Heisting Millions with AI. Over three decades he has built OHG from Amman, Jordan into a group whose artwork is on shelves in 55 markets.',
+      'Monther Al-Omari is known as the CEO of OHG and a world-class graphic designer with more than three decades of experience in packaging. He is recognised for packaging design and pre-press engineering at the highest level: packaging that prints identically in every plant and every market, colour held to ΔE < 1.5, and artwork on shelves in 55 markets for brands including Coca-Cola, Pepsi, Nestlé, Unilever, Heineken and Colgate. The group he founded in 1994 has won the Red Dot Design Award, the iF Design Award, the Campaign BIG Awards and more, and has grown to 5,000+ employees across 23 branches. He is also the force behind the Brandex design asset library, an investor in six companies, and the author of three books including Heisting Millions with AI.',
   },
   {
     question: 'Where is OHG located?',
     answer:
-      'OHG is headquartered in Amman, Jordan, with a second studio in Granger, Indiana, USA. It serves manufacturers, converters and brand owners across the Middle East, North Africa, Europe and North America, and its artwork is printed in 55 markets.',
+      'OHG is based in Granger, Indiana, USA, with its studio in Amman, Jordan, and 23 branches around the world. It serves manufacturers, converters and brand owners across North America, the Middle East, North Africa and Europe, and its artwork is printed in 55 markets.',
   },
   {
     question: 'Who are OHG’s clients?',
     answer:
-      'Manufacturers and converters, including can makers such as Crown, United Arab Can, MSCANCO and NAC, contract OHG directly; through them its artwork reaches brands including Coca-Cola, Pepsi, Red Bull, Nescafé, Lipton, Heineken, Nestlé, Mondelez, Unilever, Heinz, Nutella, Pringles, Colgate, Gillette, Marlboro, Almarai and Juhayna. The full list of 115 brands is at https://www.montheralomari.com/clients.',
+      'OHG works with the world’s largest consumer brands and the manufacturers behind them. Can makers and converters such as Crown, United Arab Can, MSCANCO and NAC contract OHG directly; through them its artwork reaches Coca-Cola, Pepsi, Red Bull, Monster Energy, Nescafé, Lipton, Heineken, Amstel, S.Pellegrino, Starbucks, Nestlé, Mondelez, Unilever, Heinz, Nutella, Pringles, KitKat, Cadbury, Häagen-Dazs, Ben & Jerry’s, Colgate, Dove, NIVEA, Gillette, La Roche-Posay, CeraVe, Marlboro, Davidoff, Almarai and Juhayna, among 115 brands across beverage, food, dairy, personal care, tobacco, automotive, technology and finance, on shelves in 55 markets. The full list by sector is at https://www.montheralomari.com/clients, and the packaging itself at https://www.montheralomari.com/gallery.',
   },
   {
     question: 'What does OHG specialise in?',
